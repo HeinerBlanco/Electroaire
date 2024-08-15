@@ -42,21 +42,31 @@ body {
     padding: 0 20px;
 }
 
-.logo {
+#logo {
     display: flex;
     align-items: center;
 }
 
-.logo img {
+#logo img {
     height: 5rem;
-    margin-right: 15px;
+    margin-left: 0rem;
+    
+}
+
+#logo:hover {
+    background-color: black;
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+    gap: 20px !important;
+    
 }
 
+.containernav {
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: space-between !important;
+}
 .nav-links a {
     color: #fff;
     text-decoration: none;
@@ -65,13 +75,30 @@ body {
     font-size: 1.2rem;
 }
 
+.nav-links ul { gap: 70px;}
+
+
 .nav-links a:hover {
     background: var(--celeste-claro);
-    border-radius: 25px;
+    border-radius: 15px;
     color: #000;
 }
 
 
+.active {
+    background-color: var(--celeste-claro) !important;
+    border-radius: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-burguer{
+    background-color: var(--celeste-claro);
+    margin-bottom: 1rem;
+    
+ 
+}
 
 .hero {
     position: relative;

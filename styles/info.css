@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Encode Sans Condensed", sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e8e8e8;
 }
 
 .info {
@@ -80,22 +80,3 @@ h2{
 }
 
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        margin-top: 10vh;
-        gap: 5rem;
-    }
-
-    .container .left,
-    .container .right {
-        margin: 5px 0;
-        text-align: center;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .fuertes{
-        margin-top: 15vh;
-    }
-}

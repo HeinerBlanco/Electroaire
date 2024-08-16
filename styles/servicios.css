@@ -65,12 +65,14 @@ body {
 
 .left, .right {
     flex: 1;
+    color: red;
 }
 
 .right {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    color: red;
 }
 .left {
     display: flex;

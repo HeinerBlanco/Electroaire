@@ -49,14 +49,16 @@ h1{
 }
 .h1-span{
     background: linear-gradient(10deg, var(--celeste-claro), var(--azul-oscuro)) ;
-    font-size: 2rem;
+    font-size: 0.5rem;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     font-family: "Hammersmith One", sans-serif;
+    text-align: left;
 }
 span{
-    font-size: 1.5rem;
+    font-size: 0.5rem;
+    text-align: left;
 }
 
 form {
@@ -66,6 +68,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 fieldset {

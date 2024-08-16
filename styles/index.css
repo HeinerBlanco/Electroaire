@@ -64,7 +64,7 @@ body {
 
 .containernav {
     display: flex !important;
-    align-items: flex-end !important;
+    align-items: center !important;
     justify-content: space-between !important;
 }
 .nav-links a {
@@ -80,15 +80,19 @@ body {
 
 .nav-links a:hover {
     background: var(--celeste-claro);
-    border-radius: 15px;
+    border-radius: 10px;
     color: #000;
+    height: 35px;
+    display: flex;
+    align-items: center;
+
 }
 
 
 .active {
     background-color: var(--celeste-claro) !important;
-    border-radius: 15px;
-    height: 45px;
+    border-radius: 10px;
+    height: 35px;
     display: flex;
     align-items: center;
 }
@@ -153,8 +157,9 @@ body {
     padding: 5vh;
 
 }
-.fuertes{
-    margin-top: 5vh;
+.seccion1, .seccion2{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
 /* CSS */
@@ -206,3 +211,90 @@ body {
   }
 
 }
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-form{margin-top: 10rem;}
+
+.subscription-form form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  
+    margin-bottom: 15rem;
+    margin-top: 4rem;
+}
+
+.divblog {
+    padding: 7rem;
+}
+
+.herofaqs {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.herofaqs::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/faqs.jpeg");
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.herofaqs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+    z-index: 2;
+}
+
+.herofaqs-content {
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    z-index: 3;
+    color: rgb(255, 255, 255) !important; /* Para asegurar que el texto sea legible */
+    font-size: 3vh;
+    padding: 20px;
+    border-radius: 15px; /* Ajusta el radio del borde según tus preferencias */
+}
+
+
+@media (max-width: 768px) {
+    .herofaqs{
+        background-color: black;
+    }
+}
+
+.loli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
